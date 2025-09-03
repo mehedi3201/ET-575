@@ -78,7 +78,7 @@ int main(){
     int n = 5;
     float m =n/2.0;
 
-    cout<<"implicit casting =  "<<m<<endl;
+    cout<<"implicit casting = "<<m<<endl;
 
 
 
