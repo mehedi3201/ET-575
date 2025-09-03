@@ -1,3 +1,9 @@
+/*
+Mehedi Mithu
+Aug 27, 2025
+Lab 1, iostream
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -14,8 +20,19 @@ int main()
     cout<<"Enter a new username "<<endl;
     cin >> username;
     cout<<"New user is "<<username<<endl;
-    
 
+    cout << "------Example 3: data type ------"<<endl;
+    // declare variable
+    char sym = '%';
+    float distance = 5.63;
+    int number = 8;
+
+    cout<<"Given symbol = "<<sym<<endl;
+    cout<<"Given distance = "<<distance<<endl;
+    cout<<"Given number ="<<number<<endl;
+
+
+    
     
     return 0;
 }
