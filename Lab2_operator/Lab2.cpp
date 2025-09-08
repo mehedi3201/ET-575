@@ -81,6 +81,45 @@ int main(){
     cout<<"implicit casting = "<<m<<endl;
 
 
+    cout<<"\n ------------ EXERCISE ------------ "<<endl;
+    int a ,b;
+    // Input
+    cout << "Enter the first number (a): ";
+    cin >> a;
+    cout << "Enter the second number (b): ";
+    cin >> b;
+
+    // Arithmetic Operations
+    cout << "\nArithmetic Operations:\n";
+    cout << "a + b = " << (a + b) << endl;
+    cout << "a - b = " << (a - b) << endl;
+    cout << "a * b = " << (a * b) << endl;
+
+    if (b != 0) { // check to avoid division by zero
+        cout << "a / b = " << (a / b) << endl;
+        cout << "a % b = " << (a % b) << endl;
+    } else {
+        cout << "Division and modulus cannot be performed (b = 0)." << endl;
+    }
+
+    // Assignment Operations
+    a += 10; // increment a by 10
+    b -= 5;  // decrement b by 5
+    cout << "\nAfter assignment operations:\n";
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    // Boolean (Logical) Operations
+    cout << "\nBoolean Operations:\n";
+    cout << "Is a greater than b? " << (a > b ? "true" : "false") << endl;
+    cout << "Is a equal to b? " << (a == b ? "true" : "false") << endl;
+    cout << "Is a not equal to b? " << (a != b ? "true" : "false") << endl;
+    cout << "Are both a and b positive? " << ((a > 0 && b > 0) ? "true" : "false") << endl;
+    cout << "Is either a or b negative? " << ((a < 0 || b < 0) ? "true" : "false") << endl;
+    cout << "Is a not greater than b? " << (!(a > b) ? "true" : "false") << endl;
+
+
+
 
     return 0;
 
