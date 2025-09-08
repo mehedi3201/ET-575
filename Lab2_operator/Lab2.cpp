@@ -117,9 +117,7 @@ int main(){
     cout << "Are both a and b positive? " << ((a > 0 && b > 0) ? "true" : "false") << endl;
     cout << "Is either a or b negative? " << ((a < 0 || b < 0) ? "true" : "false") << endl;
     cout << "Is a not greater than b? " << (!(a > b) ? "true" : "false") << endl;
-
-
-
+    
 
     return 0;
 
