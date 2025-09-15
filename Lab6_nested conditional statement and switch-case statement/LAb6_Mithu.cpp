@@ -35,37 +35,38 @@ else{
 }
 
 cout<<"\n ------ Example 2: organize three numbers in decreasing order -----"<<endl;
-// declare the identifiers (variables names)
-int num1, num2, num3;
+    // declare the identifiers (variables names)
+    int num1, num2, num3;
 
-// display a message and collect the three numbers
+    // display a message and collect the three numbers
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
 
-cout<<"Enter three numbers:";
-cin>>num1>>num2>>num3;
-
-// check if num1 is greater than num2 and num3
-if (num1>num2 && num1>num3){
-    if(num2>num3)
-    cout<<num1<<"\t"<<num2<<"\t"<<num3<<endl;
-    else
-    cout<<num1<<"\t"<<num3<<"\t"<<num2<<endl;
-
-}
-// check if the num2 is the greatest
-else  if (num2>num1 && num2>num3 ){
-    if (num1>num3)
-    cout<<num2<<"\t"<<num1<<"\t"<<num3<<endl;
-    else 
-    cout<<num2<<"\t"<<num3<<"\t"<<num1<<endl;
-
-}
-// check if the num3 is the greatest
-else if (num3>num2 && num3>num1){
-
-}
-else{
-    cout<<"All three numbers are the same!"<<endl;
-}
+    // check if num1 is greater than num2 and num3
+    if (num1 >= num2 && num1 >= num3) {
+        if (num2 >= num3)
+            cout << num1 << "\t" << num2 << "\t" << num3 << endl;
+        else
+            cout << num1 << "\t" << num3 << "\t" << num2 << endl;
+    }
+    // check if num2 is the greatest
+    else if (num2 >= num1 && num2 >= num3) {
+        if (num1 >= num3)
+            cout << num2 << "\t" << num1 << "\t" << num3 << endl;
+        else
+            cout << num2 << "\t" << num3 << "\t" << num1 << endl;
+    }
+    // check if num3 is the greatest
+    else if (num3 >= num1 && num3 >= num2) {
+        if (num1 >= num2)
+            cout << num3 << "\t" << num1 << "\t" << num2 << endl;
+        else
+            cout << num3 << "\t" << num2 << "\t" << num1 << endl;
+    }
+    // if all numbers are the same
+    else {
+        cout << "All three numbers are the same!" << endl;
+    }
 
 
 cout<<"\n ------ Example 3: swith -------"<<endl;
@@ -74,7 +75,7 @@ int dayoff;
 cout<<"Select a day-off: "<<endl;
 cout<<"1 for Monday"<<endl;
 cout<<"2 for Tuesday"<<endl;
-Cout<<"3 for Wednesday"<<endl;
+cout<<"3 for Wednesday"<<endl;
 cout<<"4 for Thursday"<<endl;
 cout<<"5 for friday"<<endl;
 cin>>dayoff;
@@ -84,7 +85,7 @@ switch (dayoff)
     case 1:
     cout<<"you are off on Monday"<<endl;
     break;
-     case 2
+     case 2:
     cout<<"you are off on Tuesday"<<endl;
     break;
      case 3:
@@ -98,7 +99,7 @@ switch (dayoff)
     cout<<"you are off on Friday"<<endl;
     break;
     default: 
-    cout<<"unable to read the day-off"
+    cout<<"unable to read the day-off"<<endl;
     break;
 }
 
@@ -110,7 +111,7 @@ cout<<"select a gender: "<<endl;
 cout<<"m or M for male"<<endl;
 cout<<"f or F for female"<<endl;
 cout<<"o or O for others"<<endl;
-ci>>gender;
+cin>>gender;
 
 switch (gender)
 {
@@ -120,7 +121,7 @@ switch (gender)
     case 'f' : case 'F':
     cout<<"Gender = FEMALE"<<endl;
     break;
-    case 'O' : case 'O':
+    case 'o' : case 'O':
     cout<<"GENDER = OTHERS"<<endl;
     break;
     default:
