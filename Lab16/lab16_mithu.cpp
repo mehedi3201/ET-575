@@ -1,5 +1,5 @@
 /*
-QiuLiangJun Li
+Mehedi Mithu
 lab 16. array in a function
 Nov 17, 2025
 */
