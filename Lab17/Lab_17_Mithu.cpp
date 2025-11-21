@@ -1,5 +1,5 @@
 /*
-QiuLiangJun Li
+Mehedi Mithu
 Nov 19, 2025
 lab 17, 2D array
 */
