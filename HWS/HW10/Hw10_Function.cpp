@@ -47,7 +47,7 @@ void countEarth(string filename)
     string word;
     while (fin >> word)
     {
-        if (word == "Earth")
+        if (word == "Earth" || word == "Earth,")
             count++;
     }
     fin.close();
